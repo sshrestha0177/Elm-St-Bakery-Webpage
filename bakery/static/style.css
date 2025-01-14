@@ -1,0 +1,393 @@
+
+
+body
+{
+    min-height: 100%;
+    background: #b0d8b5;
+}
+
+.contact {
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.location {
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.facebook {
+    font-size: 18px;
+}
+
+.facebook i:hover{
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.0);
+    color: #2d4373
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-one {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: ffb5e4; 
+    /*border-bottom: 2px solid #ffffff;*/
+}
+
+/* Styling for left section */
+.left {
+    display: flex; 
+    align-items: center;
+    gap: 10px; /* Add spacing between icon and phone number */
+}
+
+.contact i {
+    font-size: 14px; /* Size of the phone icon */
+    color: #000; /* Black color for the icon */
+}
+
+.contact span {
+    font-size: 14px; /* Adjust text size */
+    color: #000; /* Black color for the text */
+}
+
+.right {
+    display: flex; 
+    align-items: center; 
+    gap: 15px; /* Space between icons */
+}
+
+.right i {
+    font-size: 20px;
+    color: #000;
+    transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+/* Hover effect for social media icons */
+.right a:hover i {
+    transform: scale(1.2); 
+    color: #ffffff;
+}
+
+
+.logo {
+    height: 70px;
+    width: auto;  /* Maintain aspect ratio */
+    object-fit: contain; /* ensures that the image doesn't stretch */
+    padding-left: 10px; /* adds space to the left of the logo */
+}
+
+.navig {
+    display: flex;
+    align-items: center;
+  }
+
+.nav-item {
+    text-decoration: none;
+    padding-right: 25px;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    text-align: center;
+}
+/* Parallax Effect for #home Section */
+#home .content {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Makes text easier to read */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text h1 {
+    font-size: 55px;
+}
+
+.text p {
+    font-size: 20px;
+}
+
+.menu h2 {
+    font-size: 40px;
+}
+
+#about-us, #menu, #contact-us {
+    padding: 50px 20px;
+    color: #333;
+}
+/* Content within #home */
+
+
+.hero-btn {
+    display: inline-block;
+    border: solid blue;
+    text-decoration: none;
+    padding: 12px 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+.hero-btn:hover {
+    background: rgb(40, 172, 139);
+    color: white;
+    transition: 1s;
+}
+
+.menu-item {
+    border: 3px solid pink;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 20px; 
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+}
+
+.menu-all {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+}
+
+#logo {
+    max-width: 100px; 
+    height: auto; 
+}
+
+.items {
+    text-align: left;
+}
+
+.pricing {
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+*
+
+.container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bubbles{
+    position: absolute;
+    display: flex;
+}
+
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ff9494;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #d6479a,
+    0 0 50px #ff9494,
+    0 0 100px #ff9494;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #fff5f9;
+    box-shadow: 0 0 0 10px #f9fcfc44,
+    0 0 50px #f9f8f8,
+    0 0 100px #fbfbfb;
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.home-finish {
+    border-bottom: 5px solid white;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.menu-finish {
+    border-bottom: 5px solid white;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+.about-us-finish {
+    border-bottom: 5px solid white;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contact-us-finish {
+    border-bottom: 5px solid white;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.contact-text {
+    align-items: center;
+    padding: 30px;
+    margin-top: 5px solid white;
+    margin-left: 5px solid white;
+    margin-right: 5px solid white;
+    margin-right: 5px solid white;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px; 
+}
+
+.contact-social a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 30px; 
+    transition: color 0.3s ease;
+}
+
+.contact-social a:hover {
+    color: #f9f8f8;
+}
+
+.phone-address {
+    gap: 20px;
+
+}
+
+.text p {
+    font-size: 14px;
+}
+
+.menu-text h2 {
+    font-size: 50px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.about-text h2 {
+    font-size: 50px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.contact-text h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    #home {
+        height: 50vh; /* Reduce the height for smaller screens */
+        background-size: cover; /* Adjust background scaling */
+        font-size: 10px;
+    }
+
+    .menu-item {
+        width: 100%; /* Make menu items full width */
+        margin-left: 0; /* Remove margin for smaller screens */
+    }
+
+    .menu-all {
+        flex-direction: column; /* Stack the logo and menu items */
+        align-items: center;
+    }
+
+    .contact span, .location span {
+        font-size: 10px;
+    }
+
+    .contact-social {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 10px; /* Reduce spacing */
+    }
+
+    .map iframe {
+        height: 100%;
+        width: 250px;
+    }
+    .hero-btn {
+        font-size: 16px; /* Adjust button size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    h1 {
+        font-size: 36px; /* Scale down large headings */
+    }
+
+    h2, h3 {
+        font-size: 20px; /* Adjust smaller headings */
+    }
+
+    p {
+        font-size: 12px; /* Reduce paragraph text size */
+    }
+
+    img {
+        max-width: 100%; /* Ensures the image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .navbar-one {
+        flex-direction: column; /* Stack navbar items */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-item {
+        padding-right: 10px; /* Reduce spacing between nav items */
+    }
+}
